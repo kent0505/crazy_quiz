@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../features/home/pages/level_page.dart';
 import '../../features/home/pages/onboard_page.dart';
+import '../../features/home/pages/quiz_page.dart';
 import '../../features/home/pages/splash_page.dart';
 
 final routerConfig = GoRouter(
@@ -18,6 +19,12 @@ final routerConfig = GoRouter(
     GoRoute(
       path: '/level',
       builder: (context, state) => const LevelPage(),
+    ),
+    GoRoute(
+      path: '/quiz',
+      builder: (context, state) => QuizPage(
+        level: state.extra as int,
+      ),
     ),
   ],
 );
