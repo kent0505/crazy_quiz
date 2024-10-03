@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../core/utils.dart';
 import '../../../core/widgets/buttons/arrow_back_button.dart';
 import '../../../core/widgets/custom_scaffold.dart';
-import '../../../core/widgets/texts/text_r.dart';
 import '../widgets/coins_card.dart';
 import '../widgets/level_card.dart';
+import '../widgets/title_card.dart';
 
 class LevelPage extends StatelessWidget {
   const LevelPage({super.key});
@@ -18,7 +18,9 @@ class LevelPage extends StatelessWidget {
           ListView(
             padding: const EdgeInsets.symmetric(vertical: 145),
             children: const [
-              Center(child: TextB('Levels', fontSize: 30)),
+              Center(
+                child: TitleCard(title: 'Levels'),
+              ),
               SizedBox(height: 28),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

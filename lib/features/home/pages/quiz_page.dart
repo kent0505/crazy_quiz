@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../core/utils.dart';
 import '../../../core/widgets/buttons/arrow_back_button.dart';
 import '../../../core/widgets/custom_scaffold.dart';
-import '../../../core/widgets/texts/text_r.dart';
 import '../widgets/coins_card.dart';
+import '../widgets/title_card.dart';
 
 class QuizPage extends StatefulWidget {
   const QuizPage({super.key, required this.level});
@@ -32,7 +32,7 @@ class _QuizPageState extends State<QuizPage> {
             ],
           ),
           const SizedBox(height: 50),
-          TextB('Level ${widget.level}', fontSize: 30),
+          TitleCard(title: 'Level ${widget.level}'),
         ],
       ),
     );

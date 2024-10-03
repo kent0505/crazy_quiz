@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/db/prefs.dart';
+import '../../../core/utils.dart';
 import '../../../core/widgets/buttons/cuper_button.dart';
 import '../../../core/widgets/texts/text_r.dart';
 

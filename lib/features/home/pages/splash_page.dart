@@ -9,6 +9,7 @@ import '../../../core/widgets/buttons/cuper_button.dart';
 import '../../../core/widgets/custom_scaffold.dart';
 import '../../../core/widgets/texts/text_r.dart';
 import '../bloc/home_bloc.dart';
+import '../widgets/rules_dialog.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -156,12 +157,26 @@ class _Buttons extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         CuperButton(
-          onPressed: () {},
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (context) {
+                return const RulesDialog(rules: false);
+              },
+            );
+          },
           child: SvgPicture.asset('assets/shop.svg'),
         ),
         const SizedBox(height: 16),
         CuperButton(
-          onPressed: () {},
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (context) {
+                return const RulesDialog(rules: true);
+              },
+            );
+          },
           child: SvgPicture.asset('assets/rules.svg'),
         ),
       ],
