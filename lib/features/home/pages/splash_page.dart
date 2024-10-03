@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/config/app_colors.dart';
 import '../../../core/utils.dart';
 import '../../../core/widgets/buttons/cuper_button.dart';
 import '../../../core/widgets/custom_scaffold.dart';
@@ -118,7 +117,7 @@ class _Loading extends StatelessWidget {
       height: 8,
       width: 186,
       decoration: BoxDecoration(
-        color: AppColors.white,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Stack(

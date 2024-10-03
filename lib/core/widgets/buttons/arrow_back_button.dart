@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../config/app_colors.dart';
 import 'cuper_button.dart';
 
 class ArrowBackButton extends StatelessWidget {
@@ -22,11 +21,11 @@ class ArrowBackButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
             width: 3,
-            color: AppColors.white,
+            color: Colors.white,
           ),
           boxShadow: const [
             BoxShadow(
-              color: AppColors.black,
+              color: Colors.black,
               offset: Offset(2, 3),
             ),
           ],

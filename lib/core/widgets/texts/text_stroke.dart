@@ -9,8 +9,8 @@ class TextStroke extends StatelessWidget {
     this.fontSize = 20,
     this.strokeWidth = 6,
     this.fontFamily = Fonts.bold,
-    this.borderColor = AppColors.main,
-    this.textColor = AppColors.white,
+    this.borderColor = Colors.black,
+    this.textColor = Colors.white,
   });
 
   final String title;
