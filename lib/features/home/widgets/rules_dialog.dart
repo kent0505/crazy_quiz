@@ -63,11 +63,21 @@ class RulesDialog extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                ShopItem(price: 50, sec: 5, bought: secbought5),
                                 ShopItem(
-                                    price: 100, sec: 10, bought: secbought10),
+                                  price: 50,
+                                  sec: 5,
+                                  bought: secbought5,
+                                ),
                                 ShopItem(
-                                    price: 150, sec: 15, bought: secbought15),
+                                  price: 100,
+                                  sec: 10,
+                                  bought: secbought10,
+                                ),
+                                ShopItem(
+                                  price: 150,
+                                  sec: 15,
+                                  bought: secbought15,
+                                ),
                               ],
                             ),
                             const SizedBox(height: 30),
@@ -75,9 +85,15 @@ class RulesDialog extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 ShopItem(
-                                    price: 200, sec: 20, bought: secbought20),
+                                  price: 200,
+                                  sec: 20,
+                                  bought: secbought20,
+                                ),
                                 ShopItem(
-                                    price: 250, sec: 25, bought: secbought25),
+                                  price: 250,
+                                  sec: 25,
+                                  bought: secbought25,
+                                ),
                                 ShopItem(
                                   price: 300,
                                   bg: 2,

@@ -32,7 +32,7 @@ Future<void> getData() async {
     secbought10 = prefs.getBool('secbought10') ?? false;
     secbought15 = prefs.getBool('secbought15') ?? false;
     secbought20 = prefs.getBool('secbought20') ?? false;
-    secbought25 = prefs.getBool('secbought52') ?? false;
+    secbought25 = prefs.getBool('secbought25') ?? false;
     logger('BG ID = $bgID');
     logger('COINS = $coins');
   } catch (e) {
