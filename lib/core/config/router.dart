@@ -14,7 +14,9 @@ final routerConfig = GoRouter(
     ),
     GoRoute(
       path: '/onboard',
-      builder: (context, state) => const OnboardPage(),
+      builder: (context, state) => OnboardPage(
+        level: state.extra as int,
+      ),
     ),
     GoRoute(
       path: '/level',

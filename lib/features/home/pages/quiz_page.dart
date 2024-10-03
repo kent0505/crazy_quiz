@@ -142,14 +142,14 @@ class _QuizPageState extends State<QuizPage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 20),
+                  padding: const EdgeInsets.only(top: 50),
                   child: Align(
                     alignment: Alignment.center,
                     child: SizedBox(
                       width: 290,
                       child: TextR(
                         quizList[index].question,
-                        fontSize: 24,
+                        fontSize: 20,
                         maxLines: 5,
                         textAlign: TextAlign.center,
                       ),

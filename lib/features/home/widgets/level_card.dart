@@ -24,7 +24,7 @@ class LevelCard extends StatelessWidget {
           onPressed: coins <= price
               ? null
               : () {
-                  context.push('/quiz', extra: level);
+                  context.push('/onboard', extra: level);
                 },
           child: Container(
             height: 80,
