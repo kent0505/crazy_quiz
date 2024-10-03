@@ -10,9 +10,13 @@ class Quiz {
 class Answer {
   final String answer;
   final bool correct;
+  bool green;
+  bool red;
   Answer({
     required this.answer,
     required this.correct,
+    this.green = false,
+    this.red = false,
   });
 }
 
@@ -120,6 +124,332 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Pragmatism',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question: 'The Montessori method of education emphasizes:',
+    answers: [
+      Answer(
+        answer: 'Discipline and obedience',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Play-based learning',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Socialization skills',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Individualized learning and independence',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Which landmark Supreme Court case ruled that segregation in public schools was unconstitutional?',
+    answers: [
+      Answer(
+        answer: 'Brown v. Board of Education',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Plessy v. Ferguson',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Roe v. Wade',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Miranda v. Arizona',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Who proposed the idea of the Zone of Proximal Development (ZPD)?',
+    answers: [
+      Answer(
+        answer: 'Lev Vygotsky',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Jean Piaget',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Erik Erikson',
+        correct: false,
+      ),
+      Answer(
+        answer: 'B.F. Skinner',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Which of these is a principle of Universal Design for Learning (UDL)?',
+    answers: [
+      Answer(
+        answer: 'One-size-fits-all instruction',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Using only auditory learning methods',
+        correct: false,
+      ),
+      Answer(
+        answer:
+            'Providing multiple means of representation, action, and expression',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Focusing exclusively on rote memorization',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Which psychologist is known for the theory of social development, including the stages of moral development?',
+    answers: [
+      Answer(
+        answer: 'Erik Erikson',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Jean Piaget',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Lawrence Kohlberg',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Lev Vygotsky',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question: 'In the context of education, what does IEP stand for?',
+    answers: [
+      Answer(
+        answer: 'Individualized Education Plan',
+        correct: false,
+      ),
+      Answer(
+        answer: 'International Educational Protocol',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Integrated Educational Program',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Instructional Enhancement Plan ',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Who is known for the theory of classical conditioning in learning?',
+    answers: [
+      Answer(
+        answer: 'John Dewey',
+        correct: false,
+      ),
+      Answer(
+        answer: 'B.F. Skinner',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Ivan Pavlov',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Albert Bandura',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Which educational approach focuses on a curriculum centered around students\' interests and experiences?',
+    answers: [
+      Answer(
+        answer: 'Essentialism',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Progressivism',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Perennialism',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Reconstructionism',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question: 'What does the acronym ESL stand for in education?',
+    answers: [
+      Answer(
+        answer: 'English as a Second Language',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Extended Student Learning',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Education for Special Learners',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Enriched Student Literacy',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question: 'Who founded the first kindergarten?',
+    answers: [
+      Answer(
+        answer: 'Maria Montessori',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Friedrich Froebel',
+        correct: false,
+      ),
+      Answer(
+        answer: 'John Dewey',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Jean Piaget',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Which term describes a method of instruction where teachers provide models of desired behavior and students imitate those behaviors?',
+    answers: [
+      Answer(
+        answer: 'Constructivism',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Behaviorism',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Cognitivism',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Humanism',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question: 'Which of these is NOT a type of educational assessment?',
+    answers: [
+      Answer(
+        answer: 'Formative assessment',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Summative assessment',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Normative assessment',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Diagnostic assessment',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'What does the acronym NCLB stand for in the context of U.S. education policy?',
+    answers: [
+      Answer(
+        answer: 'New Children\'s Learning Bill',
+        correct: false,
+      ),
+      Answer(
+        answer: 'No Child Left Behind',
+        correct: false,
+      ),
+      Answer(
+        answer: 'National Curriculum and Learning Board',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Next Century Learning Boost',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Which term describes an educational setting where students of different ages learn together in the same environment?',
+    answers: [
+      Answer(
+        answer: 'Single-grade classroom',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Mixed-grade classroom',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Multi-age classroom',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Blended classroom',
+        correct: false,
+      ),
+    ],
+  ),
+  Quiz(
+    question:
+        'Who is known for the theory of moral development, which includes the stages of moral reasoning?',
+    answers: [
+      Answer(
+        answer: 'Jean Piaget',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Lawrence Kohlberg',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Erik Erikson',
+        correct: false,
+      ),
+      Answer(
+        answer: 'Lev Vygotsky',
         correct: false,
       ),
     ],
