@@ -7,7 +7,12 @@ import '../../../core/widgets/texts/text_stroke.dart';
 import '../bloc/home_bloc.dart';
 
 class CoinsCard extends StatelessWidget {
-  const CoinsCard({super.key});
+  const CoinsCard({
+    super.key,
+    this.amount = 0,
+  });
+
+  final int amount;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +30,7 @@ class CoinsCard extends StatelessWidget {
               builder: (context, state) {
                 if (state is CoinsLoadedState) {
                   return TextStroke(
-                    state.coins.toString(),
+                    amount == 0 ? state.coins.toString() : amount.toString(),
                     strokeWidth: 2,
                     fontSize: 14,
                     fontFamily: Fonts.bold,

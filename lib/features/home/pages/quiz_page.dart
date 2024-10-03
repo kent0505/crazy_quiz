@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/config/app_colors.dart';
 import '../../../core/models/quiz.dart';
@@ -27,6 +28,7 @@ class _QuizPageState extends State<QuizPage> {
   int index = 0;
   bool error = false;
   bool correct = false;
+  bool canTap = true;
 
   late int secc;
   Timer? _timer;
@@ -65,8 +67,8 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   void onAnswer(Answer answer) {
+    if (!canTap) return;
     onTimerEnd();
-
     if (answer.correct) {
       correct = true;
       answer.green = true;
@@ -74,12 +76,18 @@ class _QuizPageState extends State<QuizPage> {
       error = true;
       answer.red = true;
     }
+    canTap = false;
     setState(() {});
     Future.delayed(const Duration(seconds: 1), () {
+      canTap = true;
       answer.green = false;
       answer.red = false;
       if (index == 19) {
         // go to spinner page
+        _timer?.cancel();
+        if (mounted) {
+          context.push('/wheel');
+        }
       } else {
         index++;
       }
@@ -90,6 +98,9 @@ class _QuizPageState extends State<QuizPage> {
   @override
   void initState() {
     super.initState();
+    for (Quiz quiz in quizList) {
+      quiz.answers.shuffle();
+    }
     secc = seconds;
     startTimer();
   }

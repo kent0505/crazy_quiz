@@ -3,9 +3,14 @@ import 'package:flutter/material.dart';
 import '../../../core/widgets/texts/text_r.dart';
 
 class TitleCard extends StatelessWidget {
-  const TitleCard({super.key, required this.title});
+  const TitleCard({
+    super.key,
+    required this.title,
+    this.win = false,
+  });
 
   final String title;
+  final bool win;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +39,7 @@ class TitleCard extends StatelessWidget {
           child: Center(
             child: TextB(
               title,
-              fontSize: 30,
+              fontSize: win ? 16 : 30,
             ),
           ),
         ),

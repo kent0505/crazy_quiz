@@ -30,7 +30,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Science, Technology, Engineering, Mathematics',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Sociology, Technology, Engineering, Mathematics',
@@ -51,7 +51,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Vygotsky\'s Theory',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Skinner\'s Theory',
@@ -81,7 +81,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Fourteenth Amendment',
-        correct: false,
+        correct: true,
       ),
     ],
   ),
@@ -94,7 +94,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Howard Gardner',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Lev Vygotsky',
@@ -124,7 +124,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Pragmatism',
-        correct: false,
+        correct: true,
       ),
     ],
   ),
@@ -145,7 +145,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Individualized learning and independence',
-        correct: false,
+        correct: true,
       ),
     ],
   ),
@@ -155,7 +155,7 @@ List<Quiz> quizList = [
     answers: [
       Answer(
         answer: 'Brown v. Board of Education',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Plessy v. Ferguson',
@@ -177,7 +177,7 @@ List<Quiz> quizList = [
     answers: [
       Answer(
         answer: 'Lev Vygotsky',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Jean Piaget',
@@ -208,7 +208,7 @@ List<Quiz> quizList = [
       Answer(
         answer:
             'Providing multiple means of representation, action, and expression',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Focusing exclusively on rote memorization',
@@ -230,7 +230,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Lawrence Kohlberg',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Lev Vygotsky',
@@ -243,7 +243,7 @@ List<Quiz> quizList = [
     answers: [
       Answer(
         answer: 'Individualized Education Plan',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'International Educational Protocol',
@@ -273,7 +273,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Ivan Pavlov',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Albert Bandura',
@@ -291,7 +291,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Progressivism',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Perennialism',
@@ -308,7 +308,7 @@ List<Quiz> quizList = [
     answers: [
       Answer(
         answer: 'English as a Second Language',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Extended Student Learning',
@@ -333,7 +333,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Friedrich Froebel',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'John Dewey',
@@ -355,7 +355,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Behaviorism',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Cognitivism',
@@ -380,7 +380,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Normative assessment',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Diagnostic assessment',
@@ -398,7 +398,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'No Child Left Behind',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'National Curriculum and Learning Board',
@@ -424,7 +424,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Multi-age classroom',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Blended classroom',
@@ -442,7 +442,7 @@ List<Quiz> quizList = [
       ),
       Answer(
         answer: 'Lawrence Kohlberg',
-        correct: false,
+        correct: true,
       ),
       Answer(
         answer: 'Erik Erikson',

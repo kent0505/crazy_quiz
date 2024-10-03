@@ -44,7 +44,7 @@ class _OnboardPageState extends State<OnboardPage> {
             Positioned(
               left: 0,
               right: 0,
-              top: 53,
+              top: 53 + getBottom(context),
               child: Center(
                 child: QuizCountCard(
                   count: pageIndex,

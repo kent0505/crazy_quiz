@@ -4,6 +4,7 @@ import '../../features/home/pages/level_page.dart';
 import '../../features/home/pages/onboard_page.dart';
 import '../../features/home/pages/quiz_page.dart';
 import '../../features/home/pages/splash_page.dart';
+import '../../features/home/pages/wheel_page.dart';
 
 final routerConfig = GoRouter(
   initialLocation: '/',
@@ -27,6 +28,10 @@ final routerConfig = GoRouter(
       builder: (context, state) => QuizPage(
         level: state.extra as int,
       ),
+    ),
+    GoRoute(
+      path: '/wheel',
+      builder: (context, state) => const WheelPage(),
     ),
   ],
 );
