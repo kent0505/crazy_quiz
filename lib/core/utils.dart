@@ -22,7 +22,7 @@ Future<void> getData() async {
     // await prefs.remove(Prefs.onboard);
     // await prefs.clear();
     bgID = prefs.getInt('bgID') ?? 1;
-    coins = prefs.getInt('coins') ?? 3000;
+    coins = prefs.getInt('coins') ?? 0;
     seconds = prefs.getInt('seconds') ?? 30;
     bought2 = prefs.getBool('bought2') ?? false;
     bought3 = prefs.getBool('bought3') ?? false;

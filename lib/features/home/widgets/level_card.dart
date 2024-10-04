@@ -89,7 +89,7 @@ class LevelCard extends StatelessWidget {
                       level.toString(),
                       fontSize: coins >= price ? 48 : 32,
                     ),
-                    if (coins <= price)
+                    if (coins < price)
                       SvgPicture.asset(
                         'assets/lock.svg',
                         height: 24,
@@ -101,7 +101,7 @@ class LevelCard extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        if (coins <= price)
+        if (coins < price)
           SizedBox(
             height: 24,
             width: 72,

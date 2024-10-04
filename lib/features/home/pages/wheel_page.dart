@@ -157,7 +157,8 @@ class _WheelPageState extends State<WheelPage> {
                           ),
                         ),
                         Positioned(
-                          left: 28,
+                          left: 0,
+                          right: 0,
                           top: 178,
                           child: SvgPicture.asset('assets/wheel2.svg'),
                         ),
