@@ -150,8 +150,8 @@ class _Buttons extends StatelessWidget {
       children: [
         CuperButton(
           onPressed: () {
-            // context.push('/level');
-            context.push('/wheel');
+            context.push('/level');
+            // context.push('/wheel');
           },
           child: SvgPicture.asset('assets/play.svg'),
         ),

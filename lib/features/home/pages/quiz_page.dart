@@ -50,6 +50,7 @@ class _QuizPageState extends State<QuizPage> {
         });
       } else {
         if (index == 19) {
+          _timer?.cancel();
           showDialog(
             context: context,
             builder: (context) {

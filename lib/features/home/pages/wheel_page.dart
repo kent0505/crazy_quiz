@@ -75,8 +75,6 @@ class _WheelPageState extends State<WheelPage> {
     });
     getRandom();
     await Future.delayed(const Duration(seconds: 7), () async {
-      canSpin = true;
-      setState(() {});
       logger(getCoins());
       await addCoins(getCoins());
       Future.delayed(const Duration(seconds: 2), () {
@@ -103,69 +101,65 @@ class _WheelPageState extends State<WheelPage> {
       body: Stack(
         children: [
           const Center(),
-          Positioned(
-            left: 0,
-            bottom: -222,
-            child: Container(
-              height: 444,
-              width: 444,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0xff661261),
-                    blurRadius: 86,
-                  ),
-                ],
-              ),
-            ),
-          ),
+          // Positioned(
+          //   left: 0,
+          //   bottom: -222,
+          //   child: Container(
+          //     height: 444,
+          //     width: 444,
+          //     decoration: const BoxDecoration(
+          //       shape: BoxShape.circle,
+          //       boxShadow: [
+          //         BoxShadow(
+          //           color: Color(0xff661261),
+          //           blurRadius: 86,
+          //         ),
+          //       ],
+          //     ),
+          //   ),
+          // ),
           Positioned(
             top: 126 + getStatusBar(context),
             left: 0,
             right: 0,
-            child: SizedBox(
-              height: 550,
-              width: 370,
-              child: Column(
-                children: [
-                  Expanded(
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          left: 50,
-                          child: Image.asset(
-                            'assets/man.png',
-                            height: 412,
-                          ),
-                        ),
-                        Positioned(
-                          top: 40,
-                          left: 150,
-                          child: SvgPicture.asset('assets/info.svg'),
-                        ),
-                        Align(
-                          alignment: Alignment.bottomCenter,
-                          child: Transform.rotate(
-                            angle: angle,
-                            child: AnimatedRotation(
-                              turns: turns,
-                              curve: Curves.easeInOutCirc,
-                              duration: const Duration(seconds: 7),
-                              child: SvgPicture.asset('assets/wheel.svg'),
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          left: 0,
-                          right: 0,
-                          top: 178,
-                          child: SvgPicture.asset('assets/wheel2.svg'),
-                        ),
-                      ],
+            child: Center(
+              child: SizedBox(
+                height: 550,
+                width: 370,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 50,
+                      child: Image.asset(
+                        'assets/man.png',
+                        height: 412,
+                      ),
                     ),
-                  ),
-                ],
+                    Positioned(
+                      top: 40,
+                      left: 150,
+                      child: SvgPicture.asset('assets/info.svg'),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Transform.rotate(
+                        angle: angle,
+                        child: AnimatedRotation(
+                          turns: turns,
+                          curve: Curves.easeInOutCirc,
+                          duration: const Duration(seconds: 7),
+                          child: SvgPicture.asset('assets/wheel.svg'),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      top: 178,
+                      child: SvgPicture.asset('assets/wheel2.svg'),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
