@@ -1,3 +1,4 @@
+import 'package:crazy_quiz/features/home/widgets/quiz_end_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -169,10 +170,18 @@ class _Buttons extends StatelessWidget {
         const SizedBox(height: 16),
         CuperButton(
           onPressed: () {
+            // showDialog(
+            //   context: context,
+            //   builder: (context) {
+            //     return const RulesDialog(rules: true);
+            //   },
+            // );
             showDialog(
               context: context,
               builder: (context) {
-                return const RulesDialog(rules: true);
+                return const QuizEndDialog(
+                  win: false,
+                );
               },
             );
           },

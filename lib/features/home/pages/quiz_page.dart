@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:go_router/go_router.dart';
 
 import '../../../core/config/app_colors.dart';
 import '../../../core/models/quiz.dart';
@@ -13,6 +12,7 @@ import '../../../core/widgets/texts/text_r.dart';
 import '../widgets/answer_card.dart';
 import '../widgets/coins_card.dart';
 import '../widgets/quiz_count_card.dart';
+import '../widgets/quiz_end_dialog.dart';
 import '../widgets/title_card.dart';
 
 class QuizPage extends StatefulWidget {
@@ -26,6 +26,7 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
   int index = 0;
+  int correctCount = 0;
   bool error = false;
   bool correct = false;
   bool canTap = true;
@@ -49,7 +50,14 @@ class _QuizPageState extends State<QuizPage> {
         });
       } else {
         if (index == 19) {
-          //
+          showDialog(
+            context: context,
+            builder: (context) {
+              return const QuizEndDialog(
+                win: false,
+              );
+            },
+          );
         } else {
           index++;
           onTimerEnd();
@@ -72,6 +80,7 @@ class _QuizPageState extends State<QuizPage> {
     if (answer.correct) {
       correct = true;
       answer.green = true;
+      correctCount++;
     } else {
       error = true;
       answer.red = true;
@@ -83,10 +92,14 @@ class _QuizPageState extends State<QuizPage> {
       answer.green = false;
       answer.red = false;
       if (index == 19) {
-        // go to spinner page
         _timer?.cancel();
         if (mounted) {
-          context.push('/wheel');
+          showDialog(
+            context: context,
+            builder: (context) {
+              return QuizEndDialog(win: correctCount == 20);
+            },
+          );
         }
       } else {
         index++;

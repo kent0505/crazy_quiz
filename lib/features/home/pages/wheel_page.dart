@@ -79,18 +79,20 @@ class _WheelPageState extends State<WheelPage> {
       setState(() {});
       logger(getCoins());
       await addCoins(getCoins());
-      if (mounted) {
-        context.read<HomeBloc>().add(GetCoinsEvent());
-        showDialog(
-          context: context,
-          barrierDismissible: false,
-          builder: (context) {
-            return WinDialog(
-              amount: getCoins(),
-            );
-          },
-        );
-      }
+      Future.delayed(const Duration(seconds: 2), () {
+        if (mounted) {
+          context.read<HomeBloc>().add(GetCoinsEvent());
+          showDialog(
+            context: context,
+            barrierDismissible: false,
+            builder: (context) {
+              return WinDialog(
+                amount: getCoins(),
+              );
+            },
+          );
+        }
+      });
     });
   }
 
